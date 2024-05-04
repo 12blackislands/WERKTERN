@@ -1,0 +1,249 @@
+@import url('clash-display.css');
+
+
+/*font-family: ClashDisplay-Extralight;
+font-family: ClashDisplay-Light;
+font-family: ClashDisplay-Regular;
+font-family: ClashDisplay-Medium;
+font-family: ClashDisplay-Semibold;
+font-family: ClashDisplay-Bold;
+font-family: ClashDisplay-Variable;*/
+
+
+/*bgcolor offwhite, fontcolor darkgreen, bg color vintagegreen*/
+/*background-color: #F7F6F1;
+color:#07160C;
+color:#082F1F;*/
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+}
+
+
+body {
+/*  font-family: AreaNormalTrial-Regular,Arial, sans-serif;*/
+/*  font-family:"AreaNormalTrial-Regular";*/
+/*font-family: "Gerstner Programm FSL" ;*/
+font-family: ClashDisplay-Medium;
+font-weight: 300;
+color:#07160C;
+background-color: #F7F6F1;
+/*font-family: "Silk Serif";*/
+/*Font-style: regular;*/
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family:"area-trial";
+  src:url("..fonts/area-trial/AreaNormalTrial-Regular.otf");
+  font-weight:normal;
+  font-style:normal;
+}
+
+
+@font-face {
+  font-family:"ApocNormal-Regular";
+  src:url("..fonts/apoc/ApocNormal-Regular.otf");
+  font-weight:normal;
+  font-style:normal;
+}
+
+
+
+@font-face {
+  font-family:"Gerstner Programm FSL";
+  src:url("..fonts/Gerstner Programm FSL/GerstnerProgrammFSL-Regular.otf");
+  font-weight:normal;
+  font-style:normal;
+}
+
+
+
+
+@font-face {
+  font-family:"Silk Serif";
+  src:url("..fonts/Silk Serif/Silk Serif Regular.otf");
+  font-weight:normal;
+  font-style:normal;
+}
+
+
+
+/*All devices and mobile phone*/
+/*body:before {
+  content: 'mobile';
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  padding: 0.5em;
+  right: 0;
+  top: 0;
+  color: white;
+  z-index: 1;
+}*/
+
+.header-width{
+  width: 100%;
+/*  border: solid 1px salmon;*/
+  background-color: #F7F6F1;
+  height:6em;
+  position:fixed;
+}
+
+
+#ClickOnMenu{
+  width:90%;
+/*  border:solid 1px pink;*/
+  margin:auto;
+/*  font-weight:300;*/
+/*  font-weight: 600;*/
+font-size:1.3em;
+
+}
+
+
+#Logo{
+ margin-top: -0.7em;
+    font-size: 2em;
+    line-height: 0.9em;
+    margin-left: 0.5em;
+/*    font-weight: 700;*/
+/*    font-family:"Silk Serif Regular";*/
+  }
+
+
+
+#Logo a{
+  color: black;
+  
+}
+
+#ToggleDownMenu, #ClickOnMenu {
+/*  padding: 5px;*/
+padding-top:0.7em;
+  text-align: right;
+  /*background-color: #e5eecc;
+  border: solid 1px #c3c3c3;*/
+
+}
+
+#ToggleDownMenu{
+/*  padding: 50px;*/
+/*padding-top:5em;*/
+  display: none;
+  width:100%;
+/*  border:1px solid pink;*/
+  z-index: 100;
+/*  background-color:#ffed00;*/
+  background-color:#E3FF0A;
+  margin-top:0.7em;
+  height:100vh;
+}
+
+.menu-list{
+/*      font-weight: 700;*/
+    width: 90%;
+    margin: auto;
+    font-size: 3em;
+    line-height: 2em;
+/*    text-transform: uppercase;*/
+
+}
+
+
+.menu-list a{
+  color:#07160C;
+  font-weight:100;
+}
+
+
+
+
+
+.section-one{
+  font-size: 2em;
+    color: black;
+    padding-top: 3em;
+    width:90%;
+    margin:auto;
+/*    border:1px solid blue;*/
+    height:40em;
+/*    font-family:"ApocNormal-Regular";*/
+/*font-family: "Noto Serif Display", serif;*/
+/*font-family: "Gerstner-ProgrammRegular";*/
+font-family: ClashDisplay-Medium;
+color:#07160C;
+/*font-style:italic;*/
+font-weight:300;
+
+  }
+
+
+
+
+.TitleRepeat{
+font-size:1em;
+/*color:#05ff7e;*/
+color:#07160C;
+line-height: 0.9em;
+padding-top:1em;
+}
+
+
+
+.ParagpraphRepeat{
+font-size:2em;
+color:#07160C;
+}
+
+
+
+
+
+
+/*for small tablet - inclusive*/
+@media only screen and (min-width:40em) {
+  body:before {
+    content: 'tablet';
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    padding: 0.5em;
+    right: 0;
+    top: 0;
+  }
+}
+
+/*for small tablet - exclusive - use with care*/
+@media only screen and (min-width:40em) and (max-width:59.99999em) {
+}
+
+
+/*for tablet - inclusive*/
+@media only screen and (min-width:60em) {
+}
+
+/*for destop - inclusive*/
+@media only screen and (min-width:80em) {
+  body:before {
+    content: 'desktop';
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    padding: 0.5em;
+    right: 0;
+    top: 0;
+  }
+}
+
+
